@@ -1,0 +1,199 @@
+/*======================================
+7. wpo-events-single-area
+ =======================================*/
+
+.wpo-events-single-area {
+    padding: 120px 0;
+    padding-bottom: 90px;
+    @media(max-width:991px) {
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+
+    @media(max-width:767px) {
+       padding-top: 80px;
+       padding-bottom: 60px;
+    }
+    .events-single-wrap {
+
+        .events-single-slider {
+            position: relative;
+
+            .events-single-img {
+                img {
+                    width: 100%;
+                }
+            }
+
+
+
+            .owl-prev {
+                position: absolute;
+                right: -2%;
+                top: 44%;
+                transform: translateY(-50%);
+
+                @media (max-width:767px) {
+                    top: 35%;
+                }
+            }
+
+            .owl-next {
+                position: absolute;
+                right: -2%;
+                top: 53%;
+
+                @media (max-width:767px) {
+                    top: 55%;
+                }
+            }
+
+            .owl-prev,
+            .owl-next {
+                border: 0;
+                background: $white;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                transition: all .4s ease-in-out;
+
+                i {
+                    color: #b1b1b1;
+                    transition: all .4s ease-in-out;
+
+                    &::before {
+                        font-size: 25px;
+                        line-height: 35px;
+                    }
+
+                }
+
+                &:hover {
+                    i {
+                        color: $theme-primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .events-single-info {
+        margin-left: 60px;
+
+        @media (max-width:1399px) {
+            margin-left: 50px;
+        }
+
+        @media (max-width:1199px) {
+            margin-left: 0;
+        }
+
+        @media (max-width:991px) {
+            margin-top: 30px;
+        }
+
+        tr {
+            margin-bottom: 9px;
+
+            .title,
+            .text {
+                border: 0;
+                text-transform: uppercase;
+                text-decoration: underline;
+                color: $text-color;
+                font-weight: 700;
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+
+            .text {
+                color: $text-light-color-s2;
+                font-weight: 600;
+                font-size: 13px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .events-single-text {
+        margin-top: 52px;
+        margin-bottom: 74px;
+
+        h2 {
+            color: $heading-color;
+            font-weight: 600;
+            font-size: 36px;
+            font-family: $heading-font;
+            margin-bottom: 13px;
+            text-transform: capitalize;
+
+            @media (max-width:767px) {
+                font-size: 25px;
+            }
+        }
+
+        p {
+            color: $text-color;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    .events-single-project {
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        padding: 25px 0;
+
+        .prev-project,
+        .next-project {
+            color: $heading-color;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: upperevents;
+            text-decoration: underline;
+            letter-spacing: 3px;
+            width: 100%;
+        }
+
+        .prev-project {}
+
+        .next-project {
+            display: flex;
+            justify-content: end;
+        }
+
+        .project-icon {
+            text-align: center;
+
+            i {
+                color: $small-black;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .events-studies-related {
+        padding-top: 120px;
+
+        @media (max-width:991px) {
+            padding-top: 90px;
+        }
+
+        @media (max-width:767px) {
+            padding-top: 80px;
+        }
+
+        h2 {
+            color: $heading-color;
+            font-size: 36px;
+            font-weight: 600;
+            font-family: $base-font;
+            margin-bottom: 50px;
+
+            @media (max-width:767px) {
+                font-size: 25px;
+            }
+        }
+
+    }
+
+
+}
